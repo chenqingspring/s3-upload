@@ -10,7 +10,7 @@ AWS.config(
 )
 puts 'config finished'
 
-bucket_name = 'aws-training-s3-upload-day3-1'
+bucket_name = 'aws-training-s3-upload-day3'
 file_name = '500MB-file'
 
 s3 = AWS::S3.new

@@ -1,0 +1,1 @@
+dd if=/dev/random of=500MB-file bs=$(( 1024 * 1024 )) count=500
