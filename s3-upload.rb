@@ -10,7 +10,7 @@ AWS.config(
 )
 puts 'config finished'
 
-bucket_name = 'aws-training-s3-upload-day3'
+bucket_name = 'aws-training-s3-upload-day3-1'
 file_name = '500MB-file'
 
 s3 = AWS::S3.new
@@ -20,6 +20,7 @@ puts "remove bucket #{bucket_name} if exist"
 
 bucket = s3.buckets[bucket_name]
 if bucket.exists?
+  bucket.clear!
   bucket.delete
 end
 
