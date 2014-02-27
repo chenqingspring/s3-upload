@@ -14,7 +14,7 @@ bucket_name = 'aws-training-s3-upload-day3'
 file_name = '500MB-file'
 
 s3 = AWS::S3.new
-puts "Get an instance of the S3 interface."
+puts "get an instance of the S3 interface."
 
 puts "remove bucket #{bucket_name} if exist"
 
@@ -23,7 +23,6 @@ if bucket.exists?
   bucket.delete
 end
 
-puts 'Uploading a file.'
 key = File.basename(file_name)
 puts "object key is #{key}"
 puts "create bucket"
